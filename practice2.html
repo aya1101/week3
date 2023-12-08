@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="view.css" />
+    <title>Aya</title>
+</head>
+<body>
+    <header>
+            <ul class="Nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/1F6JJYF3xbJHB8wxzKjJx13BBBgwSP2GcUjuYu3dSziQ/edit?fbclid=IwAR2TewjdnpTpclAATl94-KsJmGHyX4cG5ofpA2hcEeeus1EwA4_UuLhLwlk#gid=0">Link</a></li>
+                <li><a href="#contact">Contact</a></li>
+               /*dropdown*/
+                <li ><div class="active" >
+                    <button>More</button>
+                    <div id = "more">
+                        <a>Something</a>
+                        <a>you</a>
+                        <a>will</a>
+                    </div>
+                </div></li>
+              </ul>
+            
+    </header>
+    <!--<div class ="slider">
+       <div id ="pic1"><img src="oic1.jpg"> </div>
+       <div id ="pic2"><img src="pic2.jpg"> </div>
+       <div id ="pic3"><img src="pic3.jpg"> </div>
+    </div>-->
+    <div class="slideshow">
+      <h1> Boyfriend material</h1>
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <img src="oic1.jpg" style="width:100%">
+        
+      </div>
+    
+      <div class="mySlides">
+        <img src="pic2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <img src="pic3.jpg" style="width:100%">
+      </div>
+    <div class="text">Hình ảnh chỉ mang tính chất minh hoạ</div>
+   </div> 
+    <div class="buy">
+      <h3> 👉 Đăng kí để nhận ưu đãi </h3>
+      <form class = "form" action = " ">
+        <label for = "fname"> Name </label><br>
+        <input type="text" id = "fname" placeholder="Nguyen"><br>
+        <label for = "lname"> Password </label><br>
+        <input type="text" id = "lname" placeholder="Trang"><br>
+        <label for = "mail"> Phone </label><br>
+        <input type="number" id="sđt" placeholder="0977xxxxxx"><br><br>
+        <label for = "class"> Vui lòng chọn phân loại hàng </label><br>
+        <input type ="radio" id = "class"> Hàng đẹp <br>
+        <input type ="radio" id = "class"> Chất lượng sưu tầm<br><br>
+        <input class= "button1" type = "submit" value = "Thêm vào giỏ hàng ️🛒">
+        <input class= "button2" type = "submit" value = "Mua ngay"><br>
+    </form>
+    </div>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 4000); 
+      }  
+    </script>
+</body>
+</html>
